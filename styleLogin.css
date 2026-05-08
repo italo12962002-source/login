@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('fundo.jpg') no-repeat center center/cover; /* Imagem de fundo */
+    font-family: Arial, sans-serif;
+    background-image: url(img/bg.jpg);
+}
+
+.login-container {
+    background: rgb(255, 255, 255); /* Cor branca com 10% de opacidade */
+    padding: 60px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Efeito de desfoque (glassmorfismo) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    align-items: center;
+}
+
+.login-container h2 {
+    color: white;
+
+}
+.title{
+    margin-bottom: 50px;
+}
+
+.login-container input {
+    display: block;
+    width: 89%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.login-container input::placeholder {
+    color: #4e4b4b;
+    text-align: center;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #49898c;
+    cursor: pointer;
+    font-weight: bold;
+}
+.error{
+    color: red;
+    font-size: 18px;
+    display: none;
+}

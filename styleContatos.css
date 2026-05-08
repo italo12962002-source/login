@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    max-width: 1050px;
+
+    background-color: #efefef;
+
+    border-radius: 25px;
+
+    padding: 25px;
+}
+
+/* MENU */
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 80px;
+}
+
+.menu a{
+    text-decoration: none;
+
+    background-color: #0f5567;
+    color: white;
+
+    padding: 12px 50px;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background-color: #0b4452;
+}
+
+/* ÁREA CONTATOS */
+
+.contatos{
+    background-color: #5ea5a8;
+
+    border-radius: 10px;
+
+    padding: 40px;
+
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 80px;
+}
+
+/* COLUNAS */
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+/* LINKS */
+
+.contato-link{
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.3s;
+}
+
+.contato-link:hover{
+    transform: scale(1.05);
+}
+
+/* ÍCONES */
+
+.icone-box{
+    background-color: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-box img{
+    width: 80px;
+    height: 80px;
+
+    object-fit: cover;
+}
+
+/* TEXTOS */
+
+.contato-link h2{
+    font-size: 28px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* BOTÃO */
+
+.btn-sair{
+    float: right;
+
+    background-color: #0f5567;
+    color: white;
+
+    border: none;
+
+    padding: 10px 40px;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-sair:hover{
+    background-color: #0b4452;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 900px){
+
+    .menu{
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        margin-bottom: 50px;
+    }
+
+    .contatos{
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .contato-link h2{
+        font-size: 22px;
+    }
+
+    .icone-box img{
+        width: 65px;
+        height: 65px;
+    }
+
+}
